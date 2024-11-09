@@ -31,7 +31,7 @@ export default function MealPlanGenerator() {
   }
 
   const generateMealPlan = async () => {
-    const url = new URL('http://meal-planner-ai-env.eba-hfbjk7ac.us-east-1.elasticbeanstalk.com/generate/meal-plan')
+    const url = new URL('https://3229dicmf3.us-east-1.awsapprunner.com/generate/meal-plan')
     const message = `DietType:${preferences.dietType}-NumberOfMealsPerDay:${preferences.meals}-DailyCalorieGoal:${preferences.calories}-Allergies:${preferences.allergies}`
     url.searchParams.append('message', message)
     try {
